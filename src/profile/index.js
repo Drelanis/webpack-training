@@ -1,6 +1,9 @@
-// file path: src/profile/index.js
+import { fetchUser } from './gateway';
+import printProfile from './printProfile';
 
-export const printProfile = (profileData) => {
-  const { name, company } = profileData;
-  console.log(`${name} from ${company}`);
-};
+fetchUser('github').then(({ name, location }) =>
+  printProfile({
+    name,
+    location,
+  })
+);

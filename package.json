@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:scripts": "webpack ./src/index.js -p",
-    "watch:scripts": "webpack ./src/index.js -d --devtool eval-source-maps -w"
+    "watch": "webpack -d --devtool eval-source-maps -w"
   },
   "repository": {
     "type": "git",
