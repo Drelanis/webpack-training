@@ -36,6 +36,9 @@ module.exports = (env, argv) => {
     devServer: {
       hot: true,
     },
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
   };
 
   if (isProduction) {
