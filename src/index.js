@@ -7,4 +7,3 @@ fetchUser('github').then((userData) =>
     company: userData.location,
   })
 );
-///123
