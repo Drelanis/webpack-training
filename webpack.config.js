@@ -13,10 +13,6 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.s?js$/i,
-        use: ['babel-loader'],
-      },
-      {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
