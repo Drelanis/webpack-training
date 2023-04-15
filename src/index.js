@@ -1,9 +1,15 @@
-import renderProfile from './profile/renderProfile';
-import './index.css';
+import printProfile from './renderProfile';
 
-const profileData = {
+const userData = {
   name: 'Tom',
-  location: 'The World',
+  age: 17,
 };
 
-renderProfile(profileData);
+const profile = {
+  ...userData,
+  company: 'Gromcode',
+};
+
+printProfile(profile);
+
+console.log(profile);
